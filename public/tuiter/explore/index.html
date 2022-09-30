@@ -7,28 +7,40 @@
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
+<div>
+    <!--  TODO: need to add magnifying glass icon maybe &#x2315;     -->
     <div>
-        <h1>Explore</h1>
-        <input placeholder="Search Tuiter"/>
-        &#9881;
-        <ul class="wd-nav-tabs">
-            <li class="wd-selected">For you</li>
-            <li>Treading</li>
-            <li>COVID-19</li>
-            <li>News</li>
-            <li>Sports</li>
-            <li>Entertainment</li>
-        </ul>
-        <div>
-            <h3>Trending in Science</h3>
-            <h1>Starship</h1>
-            <h3>55.5k views</h3>
-        </div>
-        <div>
-            <h3>The NY Times</h3>
-            <h1>CNN's Cuomo Conundrum</h1>
-            <img src="../../labs/a2/teslabot.jpg"/>
-        </div>
+        <input class="wd-search-bar" placeholder="&#x2315; Search Tuiter"/>
+        <a href="explore-settings.html">&#9881</a>
     </div>
+    <div>
+        <ul class="wd-nav-tabs">
+            <!--TODO: may need to add span to push the margins out and only underline the content/text-->
+
+            <a href="for-you.html"><li class="wd-selected"><span class="wd-line-selected">For you</span></li></a>
+            <a href="trending.html"><li>Trending</li></a>
+            <a href="covid19.html"><li>COVID-19</li></a>
+            <a href="news.html"><li>News</li></a>
+            <a href="sports.html"><li>Sports</li></a>
+            <a href="entertainment.html"><li>Entertainment</li></a>
+        </ul>
+    </div>
+    <div>
+        <p class="wd-post-trendline">Trending in Science</p>
+        <h4 class="wd-post-title">Starship</h4>
+        <p class="wd-post-data">55.5k views</p>
+    </div>
+    <div>
+        <p class="wd-post-trendline">Sports &#183; Trending</p>
+        <h4 class="wd-post-title">Joe Rogan</h4>
+        <p class="wd-post-data">5,218 Tweets</p>
+        <!--            <img src="../../labs/a2/teslabot.jpg"/>-->
+    </div>
+    <div>
+        <p class="wd-post-trendline">Trending in United States</p>
+        <h4 class="wd-post-title">Wonder Bread</h4>
+        <p class="wd-post-data">1,259 Tweets</p>
+    </div>
+</div>
 </body>
 </html>

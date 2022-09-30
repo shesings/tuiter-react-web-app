@@ -1,19 +1,68 @@
 body {
-    font-family: "Arial";
-    background-color: black;
-    color: white;
+    font-family: "Arial", sans-serif;
+    background-color: black; /*required*/
+    color: white; /*required*/
+    margin-left: 16px;
+}
+
+.wd-search-bar {
+    border-radius: 50px;
+    color: white; /*required*/
+    background-color: darkgray; /*required*/
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 220px;
+    margin-right: 12px; /*required*/
+    margin-left: 16px;
 }
 
 .wd-nav-tabs {
     width:100%;
-    color: rgb(29,161,242);
-    padding: 0px;
+    color: rgb(29,161,242); /*required*/
+    padding: 0;
+
 }
 .wd-nav-tabs li {
     list-style-type: none;
     display: inline-block;
+    color: rgb(110,118,125); /*required*/
+    font-size: 15px; /*required*/
+    padding: 16px; /*required*/
+    font-weight: bold;
+
+}
+
+.wd-line-selected {
+    /*width: 10px;*/
+    /*height: auto;*/
+    padding-bottom:16px;
+    border-bottom: 4px solid rgb(29,161,242); /*required*/
+    border-radius: 4px;
 }
 
 .wd-nav-tabs .wd-selected {
-    border-bottom: solid 4px rgb(29,161,242);
+    color:rgb(29,161,242);
 }
+
+.wd-post-trendline {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin-bottom: 0px;
+}
+
+.wd-post-data {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin-top: 0px;
+}
+
+.wd-post-title {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.wd-post-author {
+
+}
+
+
