@@ -45,14 +45,15 @@ body {
 }
 
 .wd-post-trendline {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+    font-size: 13px; /*required*/
+    color: rgb(110, 118, 125); /*required*/
     margin-bottom: 0px;
+    font-weight: normal;
 }
 
 .wd-post-data {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+    font-size: 13px; /*required*/
+    color: rgb(110, 118, 125); /*required*/
     margin-top: 0px;
 }
 
@@ -62,7 +63,26 @@ body {
 }
 
 .wd-post-author {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
 
+.wd-post-image {
+    width: 100px; /*required*/
+    height: 100px; /*required*/
+    margin-right: 16px; /*required*/
+    border-radius: 20px; /*needed*/
+    display: inline-block;
+    float: right;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-done {
+    clear:both;
 }
 
 
