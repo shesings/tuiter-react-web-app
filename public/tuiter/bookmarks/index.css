@@ -1,0 +1,64 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: black; /*required*/
+    border-color: rgb(47, 51, 54); /*required*/
+    color: white; /*required*/
+    /*margin-left: 16px;*/
+    /*margin-top: 12px;*/
+}
+
+.wd-avatar {
+    width: 48px; /*required*/
+    margin-left: 16px; /*required*/
+    margin-top: 12px; /*required*/
+    border-radius: 50%;
+}
+
+.wd-border {
+    border-width: 1px; /*required*/
+    border-style: solid; /*required*/
+    border-color: lightgray; /*required*/
+}
+
+
+.wd-page-title {
+    margin-left: 16px;/*required*/
+    margin-top: 12px;/*required*/
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+
+.wd-text {
+    margin-left: 16px;/*required*/
+    margin-top: 0px;
+    font-size: 13px; /*required*/
+    color: rgb(110, 118, 125); /*required*/
+    margin-bottom: 12px; /*required*/
+}
+
+.wd-post-trendline {
+    font-size: 13px; /*required*/
+    color: rgb(110, 118, 125); /*required*/
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.wd-post-author {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0px;
+
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear:both;
+}
