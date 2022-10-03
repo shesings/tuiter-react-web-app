@@ -241,4 +241,13 @@ p#id-selector-2 {
     background-color: red;
 }
 
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image-example {
+    transform: rotate(30deg);
+}
+
+
 
