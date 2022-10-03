@@ -110,8 +110,6 @@ body {
     width: 504px;
     margin-left: 75px;
     margin-top: 12px;
-    /*border-top-left-radius: 20px;*/
-    /*border-top-right-radius: 20px;*/
     border-radius: 15px;
     border: 1px solid rgb(47, 51, 54);
 
@@ -125,8 +123,6 @@ body {
 .wd-title-under-image {
     font-size: 15px;
     color: white;
-    /*word-wrap: break-word;*/
-    /*width: 506px;*/
     margin-left: 12px;
     margin-top: 12px;
     margin-right: 12px;
@@ -145,10 +141,6 @@ body {
 
 .wd-social-media {
     width: 80%;
-    /*table-layout: fixed;*/
-    /*vertical-align: center;*/
-    /*margin-left:auto;*/
-    /*margin-right:auto;*/
     margin-left: 40px;
     margin-top: 12px;
 }
@@ -182,29 +174,3 @@ tr {
 .wd-last-post {
     border-bottom: 0px;
 }
-
-/*.item-a {*/
-/*   grid-area: header;*/
-/*}*/
-
-/*.item-b {*/
-/*   grid-area: avatar;*/
-/*}*/
-
-/*.item-c {*/
-/*    grid-area: text;*/
-/*}*/
-
-/*.item-d {*/
-/*    grid-area: photo;*/
-/*}*/
-
-/*.wd-container {*/
-/*    display:grid;*/
-/*    grid-template-columns: 50px 50px 50px 50px;*/
-/*    grid-template-rows: auto;*/
-/*    grid-template-areas:*/
-/*    "header header header header"*/
-/*    "avatar text . ."*/
-/*    ". photo . .";*/
-/*}*/
