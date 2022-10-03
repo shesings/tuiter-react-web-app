@@ -5,6 +5,17 @@ body {
     margin-left: 16px;
 }
 
+.wd-container {
+    /*border-color: rgb(47, 51, 54);*/
+    /*border: 10px 10px 20px 20px;*/
+    border-width: 1px; /*required*/
+    border-style: solid; /*required*/
+    border-color: lightgray; /*required*/
+    height: 630px;
+    width: 1260px;
+    margin-left: 20px;
+}
+
 .wd-search-bar {
     border-radius: 50px;
     color: white; /*required*/
