@@ -292,6 +292,25 @@ p#id-selector-2 {
     height: 350px;
 }
 
+.gradients-positioned {
+    background:
+            radial-gradient(
+                    at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned-example {
+    background:
+            radial-gradient(
+                    at bottom right, crimson, dodgerblue);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+
 
 
 
