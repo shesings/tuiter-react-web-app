@@ -484,5 +484,39 @@ p#id-selector-2 {
     color: white;
 }
 
+@media (min-width: 0px)
+and (max-width: 700px) {
+    body {
+        background-color: darkslateblue;
+    }
+    .media-query {
+        background-color: lightblue;
+        color: firebrick;
+    }
+}
+@media (min-width: 700px)
+and (max-width: 1000px) {
+    body {
+        background-color: seagreen;
+        color: black;
+    }
+    .media-query {
+        background-color: darkslategray;
+        color: wheat;
+    }
+}
+@media (min-width: 1000px)
+and (max-width: 2000px) {
+    body {
+        background-color: burlywood;
+        color: darkslateblue;
+    }
+    .media-query {
+        background-color: violet;
+        color: white;
+    }
+}
+
+
 
 
