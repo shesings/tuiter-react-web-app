@@ -12,7 +12,7 @@ body {
     /*border: 10px 10px 20px 20px;*/
     border-width: 1px; /*required*/
     border-style: solid; /*required*/
-    border-color: lightgray; /*required*/
+    border-color: rgb(47, 51, 54); /*required*/
     height: 1055px;
     width: 600px;
     margin-left: 20px;
@@ -29,7 +29,7 @@ body {
     /*border-width: 1px; !*required*!*/
     /*border-style: solid; !*required*!*/
     /*border-color: lightgray; !*required*!*/
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(47, 51, 54);
     display: flex;
     flex-wrap: wrap;
 }
