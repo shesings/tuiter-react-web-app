@@ -13,7 +13,7 @@ body {
     border-width: 1px; /*required*/
     border-style: solid; /*required*/
     border-color: lightgray; /*required*/
-    height: 1035px;
+    height: 1055px;
     width: 600px;
     margin-left: 20px;
 }
@@ -149,11 +149,26 @@ body {
     /*vertical-align: center;*/
     /*margin-left:auto;*/
     /*margin-right:auto;*/
-    margin-left: 22px;
+    margin-left: 40px;
+    margin-top: 12px;
 }
 
 .wd-social-link {
     text-decoration: none;
+    margin-right: 12px;
+
+}
+
+.wd-social-selected {
+    font-size: 15px; /*required*/
+    font-weight: normal;
+    color: red;
+}
+
+.wd-social-number {
+    font-size: 15px; /*required*/
+    color: lightgray; /*required*/
+    font-weight: normal;
 }
 
 th {
