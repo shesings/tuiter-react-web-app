@@ -7,6 +7,17 @@ body {
     /*margin-top: 12px;*/
 }
 
+.wd-container {
+    /*border-color: rgb(47, 51, 54);*/
+    /*border: 10px 10px 20px 20px;*/
+    border-width: 1px; /*required*/
+    border-style: solid; /*required*/
+    border-color: lightgray; /*required*/
+    height: 1035px;
+    width: 600px;
+    margin-left: 20px;
+}
+
 .wd-avatar {
     width: 48px; /*required*/
     margin-left: 16px; /*required*/
@@ -15,9 +26,10 @@ body {
 }
 
 .wd-border {
-    border-width: 1px; /*required*/
-    border-style: solid; /*required*/
-    border-color: lightgray; /*required*/
+    /*border-width: 1px; !*required*!*/
+    /*border-style: solid; !*required*!*/
+    /*border-color: lightgray; !*required*!*/
+    border-bottom: 1px solid lightgray;
     display: flex;
     flex-wrap: wrap;
 }
@@ -88,11 +100,72 @@ body {
     width: 504px;
     height: 264px;
     border-radius: 15px 15px 0px 0px;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wd-image-content {
+    width: 504px;
+    margin-left: 75px;
+    margin-top: 12px;
+    /*border-top-left-radius: 20px;*/
+    /*border-top-right-radius: 20px;*/
+    border-radius: 15px;
+    border: 1px solid rgb(47, 51, 54);
+
 }
 
 .break {
     flex-basis: 100%;
     height: 0;
+}
+
+.wd-title-under-image {
+    font-size: 15px;
+    color: white;
+    /*word-wrap: break-word;*/
+    /*width: 506px;*/
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+}
+
+.wd-text-under-image {
+    font-size: 15px; /*required*/
+    color: lightgray; /*required*/
+    margin-left: 12px;
+    margin-top: 5px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.wd-social-media {
+    width: 80%;
+    /*table-layout: fixed;*/
+    /*vertical-align: center;*/
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+    margin-left: 22px;
+}
+
+.wd-social-link {
+    text-decoration: none;
+}
+
+th {
+    width: 25%;
+}
+
+tr {
+    /*margin-left: 10px;*/
+}
+
+.wd-last-post {
+    border-bottom: 0px;
 }
 
 /*.item-a {*/
