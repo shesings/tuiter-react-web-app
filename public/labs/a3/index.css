@@ -280,7 +280,17 @@ p#id-selector-2 {
     height: 400px;
 }
 
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
 
+.gradients-radial-example {
+    background: radial-gradient(mediumpurple, mediumspringgreen);
+    width: 350px;
+    height: 350px;
+}
 
 
 
