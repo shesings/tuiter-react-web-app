@@ -1,11 +1,18 @@
-.wd-search-bar-container {
+.wd-main-content {
     width: 75%;
     margin: 50px auto;
     margin-top: 5px;
     margin-bottom: 5px;
-
-
 }
+
+.wd-tuiter-theme {
+    color:#0d6efd;
+}
+
+.wd-settings {
+    padding-left: 25px;
+}
+
 
 .wd-search-bar {
     /*border-radius: 25px;*/
@@ -26,6 +33,18 @@
     text-align: center;
     pointer-events: none;
     color: black;
-
-
 }
+
+.wd-card-image-text {
+    z-index: 2;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.wd-bottom-left {
+    position: absolute;
+    top: 600px;
+    left: 5px;
+}
+
