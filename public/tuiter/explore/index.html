@@ -9,106 +9,128 @@
 </head>
 <body>
 <div class="container">
-
-    <!--    <i class="fa-solid fa-magnifying-glass"></i>-->
-    <div class="wd-main-content">
-        <div class="input-group wd-search-bar">
-            <span class="fa fa-search wd-form-icon"></span>
-            <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
-            <span class="fa fa-cog fa-2x wd-tuiter-theme wd-settings"></span>
-        </div>
-
-    </div>
-    <div class="wd-main-content">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="for-you.html">For You</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="trending.html">Trending</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="new-item">
-                <a class="nav-link" href="sports.html">Sports</a>
-            </li>
-            <li class="new-item">
-                <a class="nav-link" href="entertainment.html">Entertainment</a>
-            </li>
-        </ul>
-    </div>
-    <div class="wd-main-content">
-        <div class="card">
-            <img src="../../images/Starship-Mk1-Day.webp" class="card-img-top" alt="SpaceX Starship rocket">
-            <span class="wd-card-image-text wd-bottom-left">SpaceX's Starship</span>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <div>
-                <img class="wd-post-image" src="../../images/react.png">
-                </div>
-                    <div class="wd-float-left" style="width: 80%">
-                    <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
-                    <div class="wd-title-inline-container">
-                        <p class="card-text wd-post-title wd-title-inline-items">ReactJS</p>
-                        <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
-                        <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
-                    </div>
-                    <p class="card-text wd-post-title">React.js is a component based front end library that makes it
-                        very easy to build Single Page Applications or SPAs</p>
-                </div>
-
-                <div class="wd-float-done"></div>
+    <div class="row">
+        <!--    <i class="fa-solid fa-magnifying-glass"></i>-->
+        <div class="col-2">
+            <div class="wd-navigation-bar list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Home</a>
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    Explore
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+                <a href="#" class="list-group-item list-group-item-action">Messages</a>
+                <a href="#" class="list-group-item list-group-item-action">Bookmarks</a>
+                <a href="#" class="list-group-item list-group-item-action">Lists</a>
+                <a href="#" class="list-group-item list-group-item-action">Profile</a>
+                <a href="#" class="list-group-item list-group-item-action">More</a>
             </div>
+
         </div>
-        <div class="card">
-            <div class="card-body">
-                <div>
-                    <img class="wd-post-image" src="../../images/JavaScript-logo.png">
+        <div class="col-7">
+            <div class="wd-main-content">
+                <div class="input-group wd-search-bar">
+                    <span class="fa fa-search wd-form-icon"></span>
+                    <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
+                    <span class="fa fa-cog fa-2x wd-tuiter-theme wd-settings"></span>
                 </div>
-                <div class="wd-float-left">
-                    <div class="wd-title-inline-container">
-                        <p class="card-text wd-post-title wd-title-inline-items">JavaScript</p>
-                        <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
-                        <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
-                    </div>
-                    <p class="card-text wd-post-title">JavaScript is a programming language that can run on browsers as well as desktops</p>
-                    <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
-                </div>
-                <div class="wd-float-done"></div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <div>
-                    <img class="wd-post-image" src="../../images/jquery-logo.png">
-                </div>
-                <div class="wd-float-left">
-                    <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
-                    <div class="wd-title-inline-container">
-                        <p class="card-text wd-post-title wd-title-inline-items">jQuery</p>
-                    </div>
-                    <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
-                </div>
-                <div class="wd-float-done"></div>
+            <div class="wd-main-content">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="for-you.html">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="new-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="new-item">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <div>
-                    <img class="wd-post-image" src="../../images/nodejs-logo.png">
+            <div class="wd-main-content">
+                <div class="card">
+                    <img src="../../images/Starship-Mk1-Day.webp" class="card-img-top" alt="SpaceX Starship rocket">
+                    <span class="wd-card-image-text wd-bottom-left">SpaceX's Starship</span>
                 </div>
-                <div class="wd-float-left">
-                    <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
-                    <div class="wd-title-inline-container">
-                        <p class="card-text wd-post-title wd-title-inline-items">NodeJS</p>
-                        <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
-                        <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <img class="wd-post-image" src="../../images/react.png">
+                        </div>
+                        <div class="wd-float-left" style="width: 80%">
+                            <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
+                            <div class="wd-title-inline-container">
+                                <p class="card-text wd-post-title wd-title-inline-items">ReactJS</p>
+                                <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
+                                <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
+                            </div>
+                            <p class="card-text wd-post-title">React.js is a component based front end library that
+                                makes it
+                                very easy to build Single Page Applications or SPAs</p>
+                        </div>
+
+                        <div class="wd-float-done"></div>
                     </div>
-                    <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
                 </div>
-                <div class="wd-float-done"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <img class="wd-post-image" src="../../images/JavaScript-logo.png">
+                        </div>
+                        <div class="wd-float-left">
+                            <div class="wd-title-inline-container">
+                                <p class="card-text wd-post-title wd-title-inline-items">JavaScript</p>
+                                <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
+                                <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
+                            </div>
+                            <p class="card-text wd-post-title">JavaScript is a programming language that can run on
+                                browsers as well as desktops</p>
+                            <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
+                        </div>
+                        <div class="wd-float-done"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <img class="wd-post-image" src="../../images/jquery-logo.png">
+                        </div>
+                        <div class="wd-float-left">
+                            <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
+                            <div class="wd-title-inline-container">
+                                <p class="card-text wd-post-title wd-title-inline-items">jQuery</p>
+                            </div>
+                            <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
+                        </div>
+                        <div class="wd-float-done"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <img class="wd-post-image" src="../../images/nodejs-logo.png">
+                        </div>
+                        <div class="wd-float-left">
+                            <p class="card-text wd-post-trendline wd-post-info">Web Development</p>
+                            <div class="wd-title-inline-container">
+                                <p class="card-text wd-post-title wd-title-inline-items">NodeJS</p>
+                                <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
+                                <span class="card-text wd-post-info wd-title-inline-items"> - 2h</span>
+                            </div>
+                            <p class="card-text wd-post-trendline wd-post-info">123K Tweets</p>
+                        </div>
+                        <div class="wd-float-done"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

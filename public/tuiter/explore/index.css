@@ -44,7 +44,7 @@
 
 .wd-bottom-left {
     position: absolute;
-    top: 600px;
+    top: 325px;
     left: 5px;
 }
 
@@ -92,6 +92,11 @@
 
 .wd-float-done {
     clear:both;
+}
+
+.wd-navigation-bar {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
