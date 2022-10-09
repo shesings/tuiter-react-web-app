@@ -127,9 +127,13 @@
 .wd-follow-button {
     float:right;
     display: block;
-    width: 50%;
+    width: 26%;
     cursor: pointer;
     text-align: center;
+}
+
+.wd-user-suggestion {
+    width: 100%;
 }
 
 
