@@ -31,6 +31,12 @@
     color: black;
 }
 
+.wd-card-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 .wd-card-image-text {
     z-index: 2;
     font-weight: bold;
@@ -40,7 +46,8 @@
 
 .wd-bottom-left {
     position: absolute;
-    top: 375px;
+    /*top: 375px;*/
+    top: 90%;
     left: 5px;
 }
 
@@ -142,10 +149,27 @@
     display: inline-block;
 }
 
+.col-xl-4 .wd-user-item {
+    width: 230px;
+    display: inline-block;
+}
+
+.col-xl-6 .wd-float-left {
+    width: 75%
+}
+
+/*TODO: do media queries instead
+   https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
+   */
 
 
+/*.col-xxl-6 .wd-bottom-left {*/
+/*    top: 375px;*/
+/*}*/
 
-
+.col-xl-6 .wd-bottom-left {
+    top: 88%;
+}
 
 
 
