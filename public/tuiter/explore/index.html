@@ -6,10 +6,12 @@
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row align-items-start">
         <!--    <i class="fa-solid fa-magnifying-glass"></i>-->
         <div class="col-2">
             <div class="wd-navigation-bar list-group">
@@ -17,7 +19,7 @@
                     <a href="#" class="list-group-item list-group-item-action">
 <!--                        <i class="fa fa-circle fa-stack-2x"></i>-->
 <!--                        <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>-->
-                        &nbsp;
+                        &nbsp;<i class="fab fa-twitter"></i>
                     </a>
                 </span>
                 <a href="#" class="list-group-item list-group-item-action">
@@ -42,13 +44,15 @@
                     <i class="fa fa-user" aria-hidden="true"></i>&nbsp;
                     Profile</a>
                 <a href="#" class="list-group-item list-group-item-action">
-<!--                    <i class="fa fa-circle fa-stack"></i>-->
-                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>&nbsp;
+                    <span class="fa-stack small">
+                        <i class="fa fa-circle fa-stack-2x stack-item"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse stack-item" aria-hidden="true"></i>
+                    </span>
                     More</a>
             </div>
             <button class="wd-tweet-button btn btn-primary rounded-pill">Tweet</button>
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <div class="wd-main-content">
                 <div class="input-group wd-search-bar">
                     <span class="fa fa-search wd-form-icon"></span>
@@ -152,20 +156,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <ul class="wd-suggested-list list-group">
                 <li class="list-group-item wd-user-suggestion d-flex justify-content-between align-items-start list-title">Who to follow</li>
                 <li class="list-group-item">
-                    <img class="wd-user-image" src="../../images/java-logo.png">
-                    <div class="ms-2 me-auto">
-                        <div class="fw-bold">Java
-                            <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
+                    <div class="wd-user-item">
+                        <img class="wd-user-image" src="../../images/java-logo.png">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Java
+                                <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
+                            </div>
+                            @Java
                         </div>
-                        @Java
                     </div>
                     <span class="btn btn-primary rounded-pill wd-follow-button">Follow</span>
                 </li>
                 <li class="list-group-item">
+                    <div class="wd-user-item">
                     <img class="wd-user-image" src="../../images/relativity-space-logo.webp">
                     <div class="ms-2 me-auto">
                         <div class="fw-bold">Relativity Space
@@ -173,9 +180,11 @@
                         </div>
                         @relativityspace
                     </div>
+                    </div>
                     <span class="btn btn-primary rounded-pill wd-follow-button">Follow</span>
                 </li>
                 <li class="list-group-item">
+                    <div class="wd-user-item">
                     <img class="wd-user-image" src="../../images/virgin-galactic-logo.svg">
                     <div class="ms-2 me-auto">
                         <div class="fw-bold">Virgin Galactic
@@ -183,25 +192,30 @@
                         </div>
                         @virgingalactic
                     </div>
+                    </div>
                     <span class="btn btn-primary rounded-pill wd-follow-button">Follow</span>
                 </li>
                 <li class="list-group-item">
-                    <img class="wd-user-image" src="../../images/nasa-logo.webp">
+                    <div class="wd-user-item">
+                    <img class="wd-user-image" src="../../images/nasa-logo.png">
                     <div class="ms-2 me-auto">
                         <div class="fw-bold">NASA
                             <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
                         </div>
                         @NASA
                     </div>
+                    </div>
                     <span class="btn btn-primary rounded-pill wd-follow-button">Follow</span>
                 </li>
                 <li class="list-group-item">
+                    <div class="wd-user-item">
                     <img class="wd-user-image" src="../../images/tesla-logo.png">
                     <div class="ms-2 me-auto">
                         <div class="fw-bold">Tesla
                             <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
                         </div>
                         @Tesla
+                    </div>
                     </div>
                     <span class="btn btn-primary rounded-pill wd-follow-button">Follow</span>
                 </li>

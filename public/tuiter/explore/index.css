@@ -1,8 +1,9 @@
 .wd-main-content {
-    width: 75%;
-    margin: 50px auto;
+    width: 100%;
+    /*margin: 0px;*/
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-right: 0px;
 }
 
 .wd-tuiter-theme {
@@ -136,8 +137,13 @@
     width: 100%;
 }
 
+.fa-stack.small { font-size: 0.5em; }
+.stack-item { vertical-align: middle; }
 
-
+.wd-user-item {
+    width: 275px;
+    display: inline-block;
+}
 
 
 
