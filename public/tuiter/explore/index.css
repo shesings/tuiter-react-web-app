@@ -154,9 +154,9 @@
 /*    display: inline-block;*/
 /*}*/
 
-.col-xl-6 .wd-float-left {
-    width: 75%
-}
+/*.col-xl-6 .wd-float-left {*/
+/*    width: 75%*/
+/*}*/
 
 /*TODO: do media queries instead
    https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
@@ -167,17 +167,19 @@
 /*    top: 375px;*/
 /*}*/
 
-.col-xl-6 .wd-bottom-left {
-    top: 88%;
-}
-
-/*!* Medium devices screens and up *!*/
-/*@media (min-width: 768px) {*/
-/*    .wd-user-item {*/
-/*        width: 190px;*/
-/*        display: inline-block;*/
-/*    }*/
+/*.col-xl-6 .wd-bottom-left {*/
+/*    top: 88%;*/
 /*}*/
+
+/*!* Small devices screens and up *!*/
+@media (min-width: 576px) {
+    .wd-bottom-left{
+        top: 83%;
+    }
+    .wd-float-left {
+        width: 70%
+    }
+}
 
 /* Large devices screens and up */
 @media (min-width: 992px) {
@@ -200,6 +202,13 @@
         width: 230px;
         display: inline-block;
     }
+    .wd-bottom-left {
+        top: 88%;
+    }
+    .wd-float-left {
+        width: 75%
+    }
+
 }
 
 /* XXLarge devices screens and up*/
