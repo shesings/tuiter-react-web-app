@@ -144,15 +144,15 @@
 .fa-stack.small { font-size: 0.5em; }
 .stack-item { vertical-align: middle; }
 
-.wd-user-item {
-    width: 275px;
-    display: inline-block;
-}
+/*.wd-user-item {*/
+/*    width: 275px;*/
+/*    display: inline-block;*/
+/*}*/
 
-.col-xl-4 .wd-user-item {
-    width: 230px;
-    display: inline-block;
-}
+/*.col-xl-4 .wd-user-item {*/
+/*    width: 230px;*/
+/*    display: inline-block;*/
+/*}*/
 
 .col-xl-6 .wd-float-left {
     width: 75%
@@ -169,6 +169,45 @@
 
 .col-xl-6 .wd-bottom-left {
     top: 88%;
+}
+
+/*!* Medium devices screens and up *!*/
+/*@media (min-width: 768px) {*/
+/*    .wd-user-item {*/
+/*        width: 190px;*/
+/*        display: inline-block;*/
+/*    }*/
+/*}*/
+
+/* Large devices screens and up */
+@media (min-width: 992px) {
+    .wd-user-item {
+        /*width: 213px;*/
+        position: relative;
+        display: inline-flex;
+        /*z-index: 4;*/
+    }
+    .wd-follow-button {
+        position: relative;
+        display: inline-flex;
+        /*z-index:2;*/
+    }
+}
+
+/* XLarge devices screens and up */
+@media (min-width: 1200px) {
+    .wd-user-item {
+        width: 230px;
+        display: inline-block;
+    }
+}
+
+/* XXLarge devices screens and up*/
+@media (min-width: 1400px) {
+    .wd-user-item {
+        width: 275px;
+        display: inline-block;
+    }
 }
 
 
