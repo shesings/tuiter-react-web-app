@@ -14,11 +14,6 @@
     padding-left: 25px;
 }
 
-
-.wd-search-bar {
-    /*border-radius: 25px;*/
-}
-
 .wd-search-bar .form-control {
     padding-left: 40px;
 
@@ -26,7 +21,7 @@
 
 .wd-search-bar .wd-form-icon {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     display: block;
     width: 40px;
     height: 40px;
