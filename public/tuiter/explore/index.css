@@ -194,6 +194,17 @@
         display: inline-flex;
         /*z-index:2;*/
     }
+    .wd-tweet-button {
+        /*width: 70px;*/
+
+    }
+}
+
+/*Only LARGE screen*/
+@media (min-width: 992px) and (max-width:1199px) {
+    .wd-tweet-button {
+        width: 70px;
+    }
 }
 
 /* XLarge devices screens and up */
