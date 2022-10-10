@@ -184,20 +184,16 @@
 /* Large devices screens and up */
 @media (min-width: 992px) {
     .wd-user-item {
-        /*width: 213px;*/
-        position: relative;
+        width: 193px;
+        /*position: relative;*/
         display: inline-flex;
         /*z-index: 4;*/
     }
-    .wd-follow-button {
-        position: relative;
-        display: inline-flex;
-        /*z-index:2;*/
-    }
-    .wd-tweet-button {
-        /*width: 70px;*/
-
-    }
+    /*.wd-follow-button {*/
+    /*    position: relative;*/
+    /*    display: inline-flex;*/
+    /*    !*z-index:2;*!*/
+    /*}*/
 }
 
 /*Only LARGE screen*/
