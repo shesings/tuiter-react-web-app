@@ -1,3 +1,8 @@
+body {
+    background-color: black; /*required*/
+    color: white; /*required*/
+}
+
 .wd-main-content {
     width: 100%;
     margin-top: 5px;
@@ -11,6 +16,11 @@
 
 .wd-settings {
     padding-left: 25px;
+}
+
+.wd-input-search {
+    /*color: white; !*required*!*/
+    /*background-color: darkgray; !*required*!*/
 }
 
 .wd-search-bar .form-control {
@@ -132,6 +142,7 @@
     width: 26%;
     cursor: pointer;
     text-align: center;
+    font-weight: bold;
 }
 
 .wd-user-suggestion {
@@ -188,6 +199,28 @@
     }
 }
 
+
+
+.nav-link {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(47, 51, 54);
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: lightgray!important;
+}
+
+.wd-rounded-corners {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.wd-theme-color {
+    background-color: rgb(47, 51, 54);
+}
 
 
 
