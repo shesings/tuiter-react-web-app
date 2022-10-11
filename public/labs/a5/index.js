@@ -2,6 +2,7 @@
 // for future sections of Lab
 // alert('Hello World!');
 console.log('Hello World!');
+
 // 2.4 Variables and Constants
 console.log('Variables and Constants');
 global1 = 10;
@@ -55,3 +56,18 @@ console.log(true5);
 console.log(false3);
 console.log(sortaTrue);
 console.log(notTrue);
+
+// 2.5 Conditionals
+
+// 2.5.1 If Else
+console.log('If else');
+if (true1) {
+    console.log(true);
+}
+
+if(!false1) {
+    console.log('!false1');
+} else {
+    console.log('false1');
+}
+
