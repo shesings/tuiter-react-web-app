@@ -1,6 +1,6 @@
 body {
-    background-color: black; /*required*/
-    color: white; /*required*/
+    background-color: black;
+    color: white !important;
 }
 
 .wd-main-content {
@@ -8,6 +8,22 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 0px;
+}
+
+.card-body {
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    /*border: 1px solid white;*/
+    border: 1px solid rgba(0,0,0,.125);
 }
 
 .wd-tuiter-theme {
@@ -18,13 +34,9 @@ body {
     padding-left: 25px;
 }
 
-.wd-input-search {
-    /*color: white; !*required*!*/
-    /*background-color: darkgray; !*required*!*/
-}
-
 .wd-search-bar .form-control {
     padding-left: 40px;
+    border: 1px solid black;
 }
 
 .wd-search-bar .wd-form-icon {
@@ -37,6 +49,7 @@ body {
     text-align: center;
     pointer-events: none;
     color: black;
+
 }
 
 .wd-card-container {
@@ -71,8 +84,8 @@ body {
 }
 
 .wd-post-info {
-    font-size: 18px; /*required*/
-    color: rgb(110, 118, 125); /*required*/
+    font-size: 18px;
+    color: rgb(110, 118, 125);
     margin-bottom: 0px;
     font-weight: normal;
 }
@@ -147,6 +160,7 @@ body {
 
 .wd-user-suggestion {
     width: 100%;
+    font-size: 20px;
 }
 
 .fa-stack.small { font-size: 0.5em; }
@@ -218,10 +232,32 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.wd-theme-color {
-    background-color: rgb(47, 51, 54);
+.wd-theme-light {
+    color: white;
+    /*background-color: rgb(47, 51, 54);*/
 }
 
+.wd-theme-gray {
+    color: rgb(47, 51, 54);
+}
 
+.list-group-item-dark {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white !important;
+    text-decoration: none;
+    background-color: #212529 !important;
+    border: 1px solid #212529;
+}
 
+.nav-link.active {
+    border-bottom: 5px solid #0d6efd !important;
+    color: white !important;
+    border-radius: 4px;
 
+}
+
+.wd-handle {
+    color: rgb(103, 111, 117);
+}
