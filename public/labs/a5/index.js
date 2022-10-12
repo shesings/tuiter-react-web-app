@@ -71,3 +71,8 @@ if(!false1) {
     console.log('false1');
 }
 
+// 2.5.2 Ternary Conditional Operator
+console.log('Ternary Conditional Operator');
+const loggedIn = true;
+const greeting = loggedIn ? 'Welcome!' : 'Please login';
+console.log(greeting);
