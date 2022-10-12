@@ -76,3 +76,42 @@ console.log('Ternary Conditional Operator');
 const loggedIn = true;
 const greeting = loggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting);
+
+// 2.6 Functions
+
+// 2.6.1 Legacy ES5 function
+console.log('Legacy ES5 function');
+function add (a,b) {
+    return a + b;
+}
+const twoPlusFour = add(2,4);
+console.log(twoPlusFour);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
