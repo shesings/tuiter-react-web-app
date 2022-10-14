@@ -122,11 +122,64 @@ console.log(numberArray1);
 console.log(stringArray1);
 console.log(variableArray1);
 
+// 2.7.1 Array index and length
+console.log('Array index and length');
+const length1 = numberArray1.length;
+const index1 = numberArray1.indexOf(3);
+console.log(length1);
+console.log(index1);
 
+// 2.7.2 Adding and Removing Data to/from Arrays
+console.log('Add and remove data to arrays');
+// adding new items
+numberArray1.push(6);
+stringArray1.push('string3');
+// console.log(numberArray1);
+// console.log(stringArray1);
+// remove 1 item starting on 3rd spot
+numberArray1.splice(2, 1);
+// removes the 2nd item
+stringArray1.splice(1, 1);
+console.log(numberArray1);
+console.log(stringArray1);
 
+// 2.7.3 For Loops
+console.log('For loops');
+// console.log(stringArray1.length);
+for (let i=0; i<stringArray1.length; i++) {
+    const string1 = stringArray1[i];
+    console.log(string1);
+}
 
+// 2.7.4 The Map Function
+console.log('Map function');
+const squares = numberArray1.map(square);
+const cubes = numberArray1.map(a => a * a * a);
+console.log(squares);
+console.log(cubes);
 
+// 2.7.5 The Find Function
+console.log('Find function');
+const four = numberArray1.find(a => a === 4);
+const string3 = stringArray1.find(a => a === 'string3');
+console.log(four);
+console.log(string3);
 
+// 2.7.6 The Find Index Function
+console.log('Find index');
+const fourIndex = numberArray1.findIndex(a => a === 4);
+const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log(fourIndex);
+console.log(string3Index);
+
+// 2.7.7 The Filter Function
+console.log('Filter function');
+const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
+const evenNumbers = numberArray1.filter(a => a % 2 === 0);
+const oddNumbers = numberArray1.filter(a => a % 2 !== 0);
+console.log(numbersGreaterThan2);
+console.log(evenNumbers);
+console.log(oddNumbers);
 
 
 
