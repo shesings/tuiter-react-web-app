@@ -87,6 +87,40 @@ function add (a,b) {
 const twoPlusFour = add(2,4);
 console.log(twoPlusFour);
 
+// 2.6.2 New ES6 arrow functions
+console.log('New ES6 functions')
+const subtract = (a,b) => {
+    return a-b;
+}
+const threeMinusOne = subtract(3,1);
+console.log(threeMinusOne);
+
+// 2.6.3 Implied Returns
+console.log('Implied return');
+const multiply = (a,b) => a * b;
+const fourTimesFive = multiply(4,5);
+console.log(fourTimesFive);
+
+// 2.6.4 Optional Parenthesis and Parameters
+// Only when there is ONE parameter
+console.log('Parenthesis and parameters');
+const square = a => a*a;
+const plusOne = a => a+1;
+const twoSquared = square(2);
+const threePlusOne = plusOne(3);
+console.log(twoSquared);
+console.log(threePlusOne);
+
+// 2.7 Arrays
+console.log('Arrays');
+let numberArray1 = [1,2,3,4,5];
+let stringArray1 = ['string1', 'string2'];
+let variableArray1 = [
+    functionScoped, blockScoped, constant1, numberArray1, stringArray1
+];
+console.log(numberArray1);
+console.log(stringArray1);
+console.log(variableArray1);
 
 
 
