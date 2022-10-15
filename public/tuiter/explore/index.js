@@ -1,5 +1,5 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import whoToFollowListItem from "../WhoToFollowList/WhoToFollowListItem.js";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
@@ -18,7 +18,7 @@ function exploreComponent() {
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
             <ul class="wd-suggested-list list-group">
                 <li class="list-group-item wd-user-suggestion d-flex justify-content-between align-items-start list-title">Who to follow</li>
-                ${whoToFollowListItem()}
+                ${WhoToFollowList()}
                 
             </ul>
         </div>
