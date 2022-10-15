@@ -17,7 +17,7 @@ function exploreComponent() {
      
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
             <ul class="wd-suggested-list list-group">
-                <li class="list-group-item wd-user-suggestion d-flex justify-content-between align-items-start list-title">Who to follow</li>
+<!--                <li class="list-group-item wd-user-suggestion d-flex justify-content-between align-items-start list-title">Who to follow</li>-->
                 ${WhoToFollowList()}
                 
             </ul>
