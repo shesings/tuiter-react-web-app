@@ -23,11 +23,9 @@ const NavigationSidebar = () => { return(`
        </span>
        More
      </a>  
-       <!-- continue rest of list, e.g.,
-            Home, Explore, Notifications,  Messages, etc. -->
    </div>
    <div class="d-grid mt-2">
-     <a href="tweet.html"
+     <a href="../tuit.html"
         class="btn btn-primary btn-block rounded-pill">
         Tweet</a>
 </div> `);
