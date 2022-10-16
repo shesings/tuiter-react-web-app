@@ -73,7 +73,7 @@ if(!false1) {
 
 // 2.5.2 Ternary Conditional Operator
 console.log('Ternary Conditional Operator');
-const loggedIn = true;
+let loggedIn = true;
 const greeting = loggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting);
 
@@ -197,7 +197,35 @@ const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 
 loggedIn = false;
-const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`; console.log(greeting2)
+const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+console.log(greeting2);
+
+// 2.10 Executing jQuery scripts
+const init = () => {
+    console.log('Hello world from jQuery');
+
+    // console.log('Binding to the DOM');
+    const bindById = $('#bind-by-id');
+    const bindByClass = $('.bind-by-class');
+    console.log('Binding to DOM');
+    console.log(bindById);
+    console.log(bindByClass);
+
+    const changeStyle = $('#change-style');
+    const changeStyle2 = $('.change-style');
+    changeStyle.css('color', 'red');
+    changeStyle2.css('color', 'blue');
+
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log('Get and set attributes');
+    console.log(id);
+
+    const setClassAttr = $("#set-class-attr");
+    setClassAttr.attr('class', 'class-0');
+}
+$(init);
+
 
 
 
