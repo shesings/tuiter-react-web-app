@@ -181,7 +181,23 @@ console.log(numbersGreaterThan2);
 console.log(evenNumbers);
 console.log(oddNumbers);
 
+// 2.8 Template Strings
+console.log('Template Strings');
+// concatenate
+const five = 2 + 3;
+const result1 = "2 + 3 = " + five;
+console.log(result1);
 
+// template strings
+const result2 = `2 + 3 = ${2 + 3}`;
+console.log(result2);
+
+const username = "alice";
+const greeting1 = `Welcome home ${username}`;
+console.log(greeting1);
+
+loggedIn = false;
+const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`; console.log(greeting2)
 
 
 
