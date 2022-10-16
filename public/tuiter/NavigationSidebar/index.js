@@ -1,19 +1,12 @@
 const NavigationSidebar = (active) => {
-    // if (active === 'home') {
-    //     // const addClassTest = $("#checkActiveHome");
-    //     // const addClassTest = document.querySelector(".list-group");
-    //     // const addClassTest = document.getElementById('checkActiveHome').className = 'active';
-    //     // console.log(addClassTest);
-    //     // addClassTest.addClass("active");
-    // }
     return (`
        <div class="list-group">
          <a class="list-group-item" href="#">
            <i class="fab fa-twitter"></i></a>     
-         <a id="checkActiveHome" class="${active === 'home' ? 'active': ''} list-group-item" href="#">
+         <a id="checkActiveHome" class="${active === 'home' ? 'active': ''} list-group-item" href="../HomeScreen/index.html">
             <i class="fa fa-home"></i> Home</a>   
-         <a class="list-group-item" href="#">
-           <i class="fa fa-hashtag" class="${active === 'explore' ? 'active': ''} list-group-item"></i> Explore</a> 
+         <a class="list-group-item" class="${active === 'explore' ? 'active': ''} list-group-item" href="../ExploreScreen/index.html">
+           <i class="fa fa-hashtag"></i> Explore</a> 
          <a class="list-group-item" href="#">
            <i class="fa fa-bell"></i> Notifications</a>
          <a class="list-group-item" href="#">
