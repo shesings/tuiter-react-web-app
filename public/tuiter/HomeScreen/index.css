@@ -227,6 +227,17 @@
 }
 
 
+.wd-post-image-home {
+    width: 500px; /*required*/
+    height: 300px; /*required*/
+    margin-right: 16px; /*required*/
+    border-radius: 20px; /*needed*/
+    display: inline-block;
+    /*float: right;*/
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 
 
 

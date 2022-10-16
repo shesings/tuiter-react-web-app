@@ -21,6 +21,7 @@ export default [
         tuit: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk trib.al/nx2Gfaq',
         title: '',
         article: '',
+        link: '',
         image: '../../images/grimes-reading.webp',
         comments: '965',
         retuits: '2.4K',
