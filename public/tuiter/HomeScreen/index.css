@@ -126,7 +126,8 @@
     border-radius: 50%;
     display: inline-block;
     float: left;
-    margin-right: 15px;
+    margin-right: 5px;
+    margin-top: 2px;
 }
 
 .wd-follow-button {
@@ -224,6 +225,10 @@
         width: 275px;
         display: inline-block;
     }
+    .wd-user-post {
+        width: 550px;
+        display: inline-block;
+    }
 }
 
 
@@ -236,6 +241,20 @@
     /*float: right;*/
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-left: 60px;
+}
+
+.wd-user-tuit {
+    margin-left: 60px;
+}
+
+.wd-post-actions-container {
+    width: 600px;
+}
+
+.wd-post-action {
+    margin-right: 65px;
+
 }
 
 

@@ -22,7 +22,7 @@ export default [
         title: '',
         article: '',
         link: '',
-        image: '../../images/grimes-reading.webp',
+        image: '../../images/grimes-reading-marx.jpeg',
         comments: '965',
         retuits: '2.4K',
         likes: '4K',
