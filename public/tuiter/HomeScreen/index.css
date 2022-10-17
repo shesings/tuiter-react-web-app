@@ -64,7 +64,7 @@
 }
 
 .wd-post-info {
-    font-size: 18px; /*required*/
+    font-size: 17px; /*required*/
     color: rgb(110, 118, 125); /*required*/
     margin-bottom: 0px;
     font-weight: normal;
@@ -79,8 +79,8 @@
 }
 
 .wd-post-image {
-    width: 100px; /*required*/
-    height: 100px; /*required*/
+    width: 75px; /*required*/
+    height: 75px; /*required*/
     margin-right: 16px; /*required*/
     border-radius: 20px; /*needed*/
     display: inline-block;
@@ -246,15 +246,23 @@
 
 .wd-user-tuit {
     margin-left: 60px;
+    margin-bottom: 10px;
 }
 
 .wd-post-actions-container {
     width: 600px;
+    margin-left: 10px;
 }
 
 .wd-post-action {
     margin-right: 65px;
+}
 
+.wd-post-article {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 

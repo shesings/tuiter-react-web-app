@@ -16,15 +16,16 @@ const PostItem = (post) => {
                         <p class="card-text wd-user-tuit">${post.tuit}</p>
                     </div>
                 </div>
-                
-                    <div class="wd-float-left">
-                        
-                        <div class="wd-title-inline-container">
-                            <img src=${post.image} class="wd-post-image-home me-xxl-3 me-xl-2 me-lg-0"  alt="Avatar Icon">
+
+                        <div>
+                            <img src=${post.image} class="wd-post-image-home me-xxl-3 me-xl-2 me-lg-0"  alt="Post Image">
                         </div>
-                        <p class="card-text wd-post-title">${post.title}</p>
-                        <span class="card-text wd-post-info wd-title-inline-items">${post.article}</span>
-                        <span class="card-text wd-post-info wd-title-inline-items">${post.link}</span>
+                        <div class="wd-user-tuit">
+                            <p class="card-text wd-post-article">${post.title}</p>
+                            <span class="card-text wd-post-info wd-title-inline-items">${post.article}</span>
+                            <span class="card-text wd-post-info wd-title-inline-items">${post.link}</span>
+                        </div>
+                        
                         <div class="text-center wd-post-actions-container">
                             <span class="card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
                                  ${post.comments}
@@ -39,7 +40,7 @@ const PostItem = (post) => {
                                 <i class="fa fa-upload" aria-hidden="true"></i>
                             </span> 
                         </div>
-                    </div>
+
                 <div class="wd-float-done"></div>
             </div>
         </div>
