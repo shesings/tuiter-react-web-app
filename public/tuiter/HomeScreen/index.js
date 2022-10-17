@@ -19,10 +19,7 @@ function homeComponent() {
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
             <ul class="wd-suggested-list list-group">
 <!--            <h3>Post Summary List</h3>-->
-                ${PostSummaryList()}
-<!--                <li class="list-group-item wd-user-suggestion d-flex justify-content-between align-items-start list-title">Who to follow</li>-->
-                
-                
+                ${PostSummaryList()} 
             </ul>
         </div>
      </div>
