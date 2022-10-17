@@ -5,8 +5,8 @@ const PostItem = (post) => {
                 <div class="wd-user-post">
                     <img src=${post.avatarIcon} class="wd-user-image me-xxl-3 me-xl-2 me-lg-0"  alt="Avatar Icon">
                     <div class="ms-2 me-auto ms-lg-0">
-                        <div class="fw-bold">
-                            ${post.userName}
+                        <div>
+                            <span class="fw-bold">${post.userName}</span>
                             <span class="card-text fa fa-check-circle wd-title-inline-items"></span>
                             @${post.handle}
                             <span class="card-text wd-post-info wd-title-inline-items"> - ${post.time}</span>
