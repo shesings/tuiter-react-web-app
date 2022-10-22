@@ -85,10 +85,7 @@ p#id-selector-2 {
 .margin-all-around {
     margin: 30px;
 }
-/* TODO: come back when Prof has
-    given top rounded corners
-    https://piazza.com/class/l79hrkzbeyq7c1/post/154
-    */
+
 .rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
