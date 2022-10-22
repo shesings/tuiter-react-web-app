@@ -1,7 +1,7 @@
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar/index.js";
 import WhoToFollowList from "./who-to-follow-list/index.js";
-import PostSummaryItem from "./post-summary-list/post-summary-item.js";
+import PostSummaryList from "./post-summary-list/index.js";
 function Tuiter() {
     return(
     <div>
@@ -9,7 +9,7 @@ function Tuiter() {
         <NavigationSidebar active="home"/>
         <h1>Tuiter</h1>
         <WhoToFollowList/>
-        <PostSummaryItem/>
+        <PostSummaryList/>
     </div>
     );
 }
