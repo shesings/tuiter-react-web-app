@@ -28,7 +28,12 @@ const todosSlice = createSlice({
             const index = action.payload
             state.splice(index, 1)
         },
+        todoDoneToggle(state, action) {
+            const index = action.payload
+            const todo = state[index]
+            todo.done = !todo.done
+        },
     }
 });
-export const {addTodo, deleteTodo} = todosSlice.actions
+export const {addTodo, deleteTodo, todoDoneToggle} = todosSlice.actions
 export default todosSlice.reducer
