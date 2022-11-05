@@ -6,9 +6,10 @@ import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 
 import whoReducer from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-const store = configureStore({reducer: {who: whoReducer}});
+const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer}});
 
 function Tuiter() {
     return(
@@ -20,6 +21,7 @@ function Tuiter() {
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                      style={{"position": "relative"}}>
                     <Routes>
+                        <Route index element={<ExploreComponent/>}/>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                     </Routes>
