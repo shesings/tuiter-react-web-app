@@ -1,10 +1,14 @@
 import React, {useState} from "react";
+import {useDispatch} from "react-redux";
+import { createTuit } from "../tuits/tuits-reducer";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
+ const dispatch = useDispatch();
+
  const tuitClickHandler = () => {
-   console.log(whatsHappening);
- }
+    dispatch(createTuit({tuit: whatsHappening}));
+}
  return (
    <div className="row">
      <div className="col-auto">
