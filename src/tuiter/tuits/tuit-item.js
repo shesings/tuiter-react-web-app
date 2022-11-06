@@ -1,4 +1,6 @@
 import React from "react";
+import TuitStat from "./tuit-stat.js";
+// TODO: need to update so that the "avatarIcon" is image for the code
 const TuitItem = (
     {
         tuit = {
@@ -33,24 +35,9 @@ const TuitItem = (
                         <p className="card-text wd-user-tuit">{tuit.tuit}</p>
                     </div>
                 </div>
-
-                <div className="text-center wd-post-actions-container">
-                            <span
-                                className="card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                 {tuit.comments}
-                            </span>
-                    <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="fa fa-retweet" aria-hidden="true"></i> {tuit.retuits}
-                            </span>
-                    <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="far fa-heart"></i> {tuit.likes}
-                            </span>
-                    <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="fa fa-upload" aria-hidden="true"></i>
-                            </span>
-                </div>
-
+                <TuitStat/>
                 <div className="wd-float-done"></div>
+
             </div>
         </div>
     );
