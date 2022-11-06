@@ -35,7 +35,7 @@ const TuitItem = (
                         <p className="card-text wd-user-tuit">{tuit.tuit}</p>
                     </div>
                 </div>
-                <TuitStat/>
+                <TuitStat tuit={tuit}/>
                 <div className="wd-float-done"></div>
 
             </div>

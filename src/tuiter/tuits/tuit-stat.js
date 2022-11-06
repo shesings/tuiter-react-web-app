@@ -23,13 +23,13 @@ const TuitStat = (
         <div className="text-center wd-post-actions-container">
             <span
                 className="card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                {tuit.comments}
+                {tuit.replies}
             </span>
             <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
                 <i className="fa fa-retweet" aria-hidden="true"></i> {tuit.retuits}
             </span>
             <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                <i className="far fa-heart"></i> {tuit.likes}
+                <i className="fa fa-heart"></i> {tuit.likes}
             </span>
             <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
                 <i className="fa fa-upload" aria-hidden="true"></i>
