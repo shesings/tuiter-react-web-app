@@ -1,0 +1,21 @@
+.profileViewHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.followCountSection {
+    display: flex;
+    gap: 10px;
+}
+
+.lineDetailSection {
+    display: flex;
+    gap: 20px;
+
+}
+
+.lineDetailSection > p {
+    display: flex;
+    gap: 10px;
+}
