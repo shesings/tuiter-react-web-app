@@ -1,5 +1,8 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import TuitStat from "./tuit-stat.js";
+import { deleteTuit } from "./tuits-reducer.js";
+
 // TODO: need to update so that the "avatarIcon" is image for the code
 const TuitItem = (
     {
@@ -20,9 +23,18 @@ const TuitItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (tuidId) => {
+        dispatch(deleteTuit(tuidId));
+    }
+
+    
     return(
         <div className="card wd-card">
+            
             <div className="card-body">
+            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i>
+
                 <div className="wd-user-post">
                     <img src={tuit.avatarIcon} className="wd-user-image me-xxl-3 me-xl-2 me-lg-0" alt="Avatar Icon"/>
                     <div className="ms-2 me-auto ms-lg-0">

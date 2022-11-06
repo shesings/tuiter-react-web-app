@@ -22,17 +22,24 @@ const tuitsSlice = createSlice({
     name: 'tuits',
     initialState: tuits,
     reducers: {
-        createTuit: (state, action) =>{
+        createTuit: (state, action) => {
             const stateToPrepend = {
                 ...action.payload,
                 ...templateTuit,
                 _id: (new Date()).getTime(),
             }
             state.unshift(stateToPrepend); // add new state to start of array
+        },
+        deleteTuit: (state, action) => {
+          const index = state
+            .findIndex(tuit =>
+               tuit._id === action.payload);
+
+            state.splice(index, 1);
         }
     }
 });
 
-export const {createTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 
 export default tuitsSlice.reducer;
