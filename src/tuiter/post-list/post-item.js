@@ -44,16 +44,20 @@ const PostItem = (
                 <div className="text-center wd-post-actions-container">
                             <span
                                 className="card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                                <i className="bi bi-chat"></i>
                                  {post.comments}
                             </span>
                     <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="fa fa-retweet" aria-hidden="true"></i> {post.retuits}
+                            <i className="bi bi-repeat"></i>
+                             {post.retuits}
                             </span>
                     <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="far fa-heart"></i> {post.likes}
+                    <i className="bi bi-heart"></i>
+                         {post.likes}
                             </span>
                     <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                                <i className="fa fa-upload" aria-hidden="true"></i>
+                    <i className="bi bi-share"></i>
+
                             </span>
                 </div>
 

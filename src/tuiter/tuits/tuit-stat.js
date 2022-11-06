@@ -1,4 +1,5 @@
 import React from "react";
+import "./TuitStat.css";
 
 const TuitStat = (
     {
@@ -22,17 +23,20 @@ const TuitStat = (
     return (
         <div className="text-center wd-post-actions-container">
             <span
-                className="card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                className="stat card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                <i className="bi bi-chat"></i>
                 {tuit.replies}
             </span>
-            <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                <i className="fa fa-retweet" aria-hidden="true"></i> {tuit.retuits}
+            <span className="stat card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                <i className="bi bi-repeat"></i>
+                {tuit.retuits}
+                </span>
+            <span className="stat card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                <i className="bi bi-heart"></i>
+                {tuit.likes}
             </span>
             <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                <i className="fa fa-heart"></i> {tuit.likes}
-            </span>
-            <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                <i className="fa fa-upload" aria-hidden="true"></i>
+                <i className="bi bi-share"></i>
             </span>
         </div>
     );
