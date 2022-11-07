@@ -9,6 +9,7 @@ const mockCurrentUser = {
    
    const templateTuit = {
     ...mockCurrentUser,
+    "avatarIcon": "../../images/nasa-logo.png",
     "topic": "Space",
     "time": "2h",
     "liked": false,
