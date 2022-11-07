@@ -23,19 +23,21 @@ const TuitStat = (
     return (
         <div className="text-center wd-post-actions-container">
             <span
-                className="stat card-text fa fa-comment wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+                className="stat card-text fa fa-comment wd-post-info wd-post-trendline wd-post-action">
                 <i className="bi bi-chat"></i>
                 {tuit.replies}
             </span>
-            <span className="stat card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+            <span className="stat card-text wd-post-info wd-post-trendline wd-post-action">
                 <i className="bi bi-repeat"></i>
                 {tuit.retuits}
                 </span>
-            <span className="stat card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
-                <i className="bi bi-heart"></i>
+            <span className="stat card-text wd-post-info wd-post-trendline wd-post-action">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={`${tuit.liked ? 'red' : 'lightgrey'}`} class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
                 {tuit.likes}
             </span>
-            <span className="card-text wd-post-info wd-title-inline-items wd-post-trendline wd-post-action">
+            <span className="card-text wd-post-info wd-post-trendline wd-post-action">
                 <i className="bi bi-share"></i>
             </span>
         </div>
