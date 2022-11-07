@@ -4,7 +4,7 @@ import tuits from './tuits.json';
 const mockCurrentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "nasa.png",
+    "image": "../../images/nasa-logo.png",
    };
    
    const templateTuit = {
