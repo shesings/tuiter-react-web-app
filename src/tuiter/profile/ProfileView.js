@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProfileView.css";
 
 // const test = {
@@ -26,7 +27,7 @@ const ProfileView = (tuitProfile) => {
              
            </div>
            <div>
-                <img src={`../../images/${bannerPicture}`} height="200px"/>
+                <img src={`../../images/${bannerPicture}`} height="230px"/>
             </div>
             <div className="profile-details">
                <NameAndTag profileName={profileName} handle={handle} bio={bio} />
@@ -43,8 +44,13 @@ const ProfileView = (tuitProfile) => {
 
 const NameAndTag = ({profileName, handle, bio}) => {
    return (<div>
-      <section><h4 style={{margin: 0}}>{profileName}</h4></section>
-      <section>{handle}</section><br/>
+      <div className="nameTagEdit">
+         <div>
+            <section><h4 style={{margin: 0}}>{profileName}</h4></section>
+            <section>{handle}</section><br/>
+         </div>
+         <Link to={'/tuiter/edit-profile'}><button className="editButton"> Edit Profile</button></Link>
+      </div>
       <p>{bio}</p>
    </div>)
 }

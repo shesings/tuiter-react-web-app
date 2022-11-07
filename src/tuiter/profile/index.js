@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import ProfileEditView from "./ProfileEditView";
 import ProfileView from "./ProfileView";
 const mockData = {
    firstName: 'Sheetal', lastName: 'Singh', handle: '@shesings',
@@ -14,6 +15,7 @@ const mockData = {
 const ProfileComponent = ({editMode = false}) => {
     return( <>
            {!editMode && <ProfileView {...mockData}/>}
+           {editMode && <ProfileEditView {...mockData} />}
         </>
     );
 };

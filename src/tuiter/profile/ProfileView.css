@@ -1,7 +1,15 @@
-.profileViewHeader {
+.profileViewHeader, .profileEditHeader {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.profileEditHeader {
+    justify-content: space-between;
+}
+
+.profileEditLabels {
+    display: flex;
 }
 
 .followCountSection {
@@ -18,4 +26,23 @@
 .lineDetailSection > p {
     display: flex;
     gap: 10px;
+}
+
+.editButton, .saveButton {
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    background: white;
+    color: black;
+}
+
+.saveButton {
+    background: black;
+    color: white;
+}
+
+.nameTagEdit {
+    display: flex;
+    margin-top: 20px;
+    gap: 350px;
 }
