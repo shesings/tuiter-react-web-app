@@ -1,19 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./ProfileView.css";
-
-// const test = {
-//    firstName: 'Jose', lastName: 'Annunziato', handle: '@jannunzi',
-//    profilePicture: 'jose.png', 	bannerPicture: 'polyglot.png',
-//    bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast.
-//          Retuits and likes are not endorsements.',
-//    website: 'youtube.com/webdevtv',
-//    location: 'Boston, MA',	dateOfBirth: '7/7/1968',	dateJoined: '4/2009',
-//    followingCount: 340,	followersCount: 223
-//  }
  
-const ProfileView = (tuitProfile) => {
-   const {profileName = 'Sheetal', tweetCount = '12212', handle = '@sheetal', bio, followersCount, followingCount, bannerPicture} = tuitProfile;
+const ProfileView = () => {
+   const tuitProfile = useSelector((state) => state.profile);
+
+   const {profileName = 'Sheetal', tweetCount, handle = '@sheetal', bio, followersCount, followingCount, bannerPicture} = tuitProfile;
+
     return( <>
            <div className={'profileViewHeader'}>
              <div>
@@ -21,7 +15,7 @@ const ProfileView = (tuitProfile) => {
              </div>
              <div>
                 <section><strong>{profileName}</strong></section>
-                <section>{tweetCount} tweets</section>
+                <section>{tweetCount || 0} tweets</section>
              </div>
              <br/>
              

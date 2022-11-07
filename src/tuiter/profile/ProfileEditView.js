@@ -1,6 +1,9 @@
 import React, {useState} from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { saveProfile } from "./profile-reducer";
 import "./ProfileView.css";
+import { useNavigate } from 'react-router-dom';
 
 // const test = {
 //    firstName: 'Jose', lastName: 'Annunziato', handle: '@jannunzi',
@@ -12,10 +15,33 @@ import "./ProfileView.css";
 //    followingCount: 340,	followersCount: 223
 //  }
  
-const ProfileEditView = (tuitProfile) => {
-   const {profileName = 'Sheetal', tweetCount = '12212', handle = '@sheetal', bio, followersCount, followingCount, bannerPicture} = tuitProfile;
+const ProfileEditView = () => {
+   const tuitProfile = useSelector((state) => state.profile);
+   console.log(tuitProfile)
+   const {profileName = 'Sheetal', tweetCount = '12212', handle = '@sheetal', bio, followersCount, followingCount, bannerPicture, location, website, dateOfBirth} = tuitProfile;
+
+   const [name, setName] = useState(profileName);
+   const [locationInput, setLocation] = useState(location);
+   const [websiteInput, setWebsite] = useState(website);
+   const [dateOfBirthInput, setDateOfBirth] = useState(dateOfBirth);
+
    const [editBio, setBio] = useState(bio);
 
+   const dispatch = useDispatch();
+   const history = useNavigate();
+
+   const submitEditProfile = () => {
+      const tuitProfile = {
+         profileName: name,
+         location: locationInput,
+         website: websiteInput,
+         dateOfBirth: dateOfBirthInput,
+         bio: editBio
+      }
+      dispatch(saveProfile(tuitProfile));
+
+      history('/tuiter/profile');
+   }
     
     return( <>
       <div className={'profileEditHeader'}>           
@@ -25,7 +51,7 @@ const ProfileEditView = (tuitProfile) => {
                      <section><strong>Edit profile</strong></section>
                </div>
             </div>
-           <Link to={'/tuiter/profile'}><button className="saveButton">Save</button></Link>
+           <button className="saveButton" onClick={submitEditProfile}>Save</button>
         </div>
         <div>
              
@@ -36,11 +62,11 @@ const ProfileEditView = (tuitProfile) => {
        </div>
        <br/>
        <div class="form-floating mb-3">
-            <input type="emaitextl" class="form-control" id="nameInput" placeholder="Name" />
+            <input type="text" class="form-control" onChange={(event) => setName(event.target.value)} id="nameInput" placeholder="Name" value={name} />
             <label for="nameInput" class="form-label">Name</label>
          </div> 
          <div class="form-floating mb-3">
-             <textarea value={bio} placeholder="Enter your bio"
+             <textarea value={editBio} placeholder="Enter your bio"
                style={{height: '100px'}}
                id="bioInput"
                      className="form-control"
@@ -49,17 +75,17 @@ const ProfileEditView = (tuitProfile) => {
             <label for="bioInput" class="form-label">Bio</label>
          </div> 
          <div class="form-floating  mb-3">
-            <input type="text" class="form-control" id="locationInput" placeholder="Location" />
+            <input type="text" value={locationInput} onChange={(event) => setLocation(event.target.value)} class="form-control" id="locationInput" placeholder="Location" />
             <label for="locationInput" class="form-label">Location</label>
          </div> 
          
          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="websiteInput" placeholder="website" />
+            <input type="text" value={websiteInput} onChange={(event) => setWebsite(event.target.value)} class="form-control" id="websiteInput" placeholder="website" />
             <label for="websiteInput" class="form-label">Website</label>
          </div> 
          
          <div class="form-floating mb-3">
-           <input type="text" class="form-control" id="locationInput" placeholder="Location" />
+           <input type="text" value={dateOfBirthInput} onChange={(event) => setDateOfBirth(event.target.value)} class="form-control" id="locationInput" placeholder="Location" />
             <label for="locationInput" class="form-label">Birth Date</label>
          </div> 
    </>
