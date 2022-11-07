@@ -6,7 +6,7 @@ import "./ProfileView.css";
 const ProfileView = () => {
    const tuitProfile = useSelector((state) => state.profile);
 
-   const {profileName = 'Sheetal', tweetCount, handle = '@sheetal', bio, followersCount, followingCount, bannerPicture} = tuitProfile;
+   const {profileName = 'Sheetal', tweetCount, handle = '@sheetal', bio, followersCount, followingCount, bannerPicture, profilePicture} = tuitProfile;
 
     return( <>
            <div className={'profileViewHeader'}>
@@ -20,8 +20,9 @@ const ProfileView = () => {
              <br/>
              
            </div>
-           <div>
-                <img src={`../../images/${bannerPicture}`} height="230px"/>
+           <div className="headerWithImage">
+                <img src={bannerPicture} height="230px"/>
+                <img class="profileImage" src={profilePicture} />
             </div>
             <div className="profile-details">
                <NameAndTag profileName={profileName} handle={handle} bio={bio} />

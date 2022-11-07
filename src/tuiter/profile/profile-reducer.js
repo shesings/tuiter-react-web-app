@@ -5,7 +5,7 @@ const mockData = {
     profileName: 'Sheetal',
     handle: '@shesings',
     tweetCount: 1292,
-    profilePicture: 'test.png', 	bannerPicture: 'profileCover.jpg',
+    profilePicture: '../../images/anime.jpg', 	bannerPicture: '../../images/profileCover.jpg',
     bio: `Student, Software Engineer by day, gamer by night.
           Retuits and likes are not endorsements.`,
     website: 'youtube.com/webdevtv',

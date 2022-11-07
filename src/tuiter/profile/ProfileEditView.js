@@ -17,8 +17,7 @@ import { useNavigate } from 'react-router-dom';
  
 const ProfileEditView = () => {
    const tuitProfile = useSelector((state) => state.profile);
-   console.log(tuitProfile)
-   const {profileName = 'Sheetal', tweetCount = '12212', handle = '@sheetal', bio, followersCount, followingCount, bannerPicture, location, website, dateOfBirth} = tuitProfile;
+   const {profileName = 'Sheetal', bio, profilePicture, bannerPicture, location, website, dateOfBirth} = tuitProfile;
 
    const [name, setName] = useState(profileName);
    const [locationInput, setLocation] = useState(location);
@@ -57,9 +56,10 @@ const ProfileEditView = () => {
              
          </div>
         <br/>
-      <div>
-           <img src={`../../images/${bannerPicture}`} height="230px"/>
-       </div>
+        <div className="headerWithImage">
+                <img src={bannerPicture} height="230px"/>
+                <img class="profileImage" src={profilePicture} />
+      </div>
        <br/>
        <div class="form-floating mb-3">
             <input type="text" class="form-control" onChange={(event) => setName(event.target.value)} id="nameInput" placeholder="Name" value={name} />
