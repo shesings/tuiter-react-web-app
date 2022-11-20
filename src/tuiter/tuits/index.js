@@ -5,7 +5,7 @@ import TuitItem from "./tuit-item.js";
 import {useSelector} from "react-redux";
 
 const TuitsList = () => {
-    const tuitArray = useSelector((state) => state.tuits);
+    const tuitArray = useSelector((state) => state.tuitsData.tuits);
     return(
         <ul className="list-group">
             {

@@ -1,5 +1,7 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 import "./TuitStat.css";
+import {updateTuitThunk} from "../../services/tuits-thunks.js";
 
 const TuitStat = (
     {

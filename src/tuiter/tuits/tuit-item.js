@@ -1,7 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import TuitStat from "./tuit-stat.js";
-import { deleteTuit } from "./tuits-reducer.js";
+// import { deleteTuit } from "./tuits-reducer.js";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 // TODO: need to update so that the "avatarIcon" is image for the code
 const TuitItem = (
@@ -25,7 +26,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (tuidId) => {
-        dispatch(deleteTuit(tuidId));
+        dispatch(deleteTuitThunk(tuidId));
     }
 
     
