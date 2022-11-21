@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuits.json';
 import {updateTuitThunk, createTuitThunk, deleteTuitThunk, findTuitsThunk} from "../../services/tuits-thunks.js";
 
 const initialState = {
@@ -22,6 +21,7 @@ const mockCurrentUser = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "dislikes": 0,
    }
    
 
@@ -67,6 +67,8 @@ const tuitsSlice = createSlice({
     },
     reducers: {
         createTuit: (state, action) => {
+            console.log({templateTuit});
+            console.log(action.payload);
             const stateToPrepend = {
                 ...action.payload,
                 ...templateTuit,
