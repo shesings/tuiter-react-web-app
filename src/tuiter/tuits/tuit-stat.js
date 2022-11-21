@@ -22,6 +22,7 @@ const TuitStat = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
     return (
         <div className="text-center wd-post-actions-container">
             <span
@@ -34,9 +35,11 @@ const TuitStat = (
                 {tuit.retuits}
                 </span>
             <span className="stat card-text wd-post-info wd-post-trendline wd-post-action">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={`${tuit.liked ? 'red' : 'lightgrey'}`} class="bi bi-heart-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                </svg>
+                <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes + 1
+                        }))} className="bi bi-heart-fill me-2 text-danger">              
+                </i>
                 {tuit.likes}
             </span>
             <span className="card-text wd-post-info wd-post-trendline wd-post-action">
