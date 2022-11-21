@@ -24,7 +24,6 @@ const TuitStat = (
     }
 ) => {
     const dispatch = useDispatch();
-    console.log(tuit.dislikes);
     return (
         <div className="text-center wd-post-actions-container">
             <span

@@ -4,7 +4,7 @@ import React from "react";
 // import PostList from "../post-list/index.js";
 // import WhoToFollowList from "../who-to-follow-list/index.js";
 import WhatsHappening from "./whats-happening.js";
-import TuitsList from "../tuits/index.js";
+import TuitsList from "../tuits/tuit-list.js";
 
 import "./index.css";
 
