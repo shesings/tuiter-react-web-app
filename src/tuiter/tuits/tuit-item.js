@@ -41,10 +41,11 @@ const TuitItem = (
                     <img src={tuit.avatarIcon} className="wd-user-image me-xxl-3 me-xl-2 me-lg-0" alt="Avatar Icon"/>
                     <div className="ms-2 me-auto ms-lg-0">
                         <div>
-                            <span className="fw-bold">{tuit.userName}</span>
+                            <span className="fw-bold"> {tuit.userName} </span>
+                            <i className="bi bi-patch-check-fill me-1"></i>
                             <span className="card-text fa fa-check-circle wd-title-inline-items"></span>
                             {tuit.handle}
-                            <span className="card-text wd-post-info wd-title-inline-items"> - {tuit.time}</span>
+                            <span className="card-text wd-post-info wd-title-inline-items ms-1"> • {tuit.time}</span>
                         </div>
                         <p className="card-text wd-user-tuit">{tuit.tuit}</p>
                     </div>

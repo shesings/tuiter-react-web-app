@@ -9,12 +9,12 @@ const initialState = {
 const mockCurrentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "../../images/nasa-logo.png",
+    "image": "../../public/images/nasa-logo.png",
    };
    
    const templateTuit = {
     ...mockCurrentUser,
-    "avatarIcon": "../../images/nasa-logo.png",
+    "avatarIcon": "../../public/images/nasa-logo.png",
     "topic": "Space",
     "time": "2h",
     "liked": false,
